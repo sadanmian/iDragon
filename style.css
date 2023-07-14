@@ -5,6 +5,7 @@
 
 body {
     background-color: lightblue;
+    overflow: hidden;
 }
 
 .gameContainer {
@@ -40,7 +41,11 @@ body {
 }
 
 .animatePlayer {
-    animation: player 0.6s linear;
+    animation: player 0.8s linear;
+}
+
+.obstacleAnimate {
+    animation: obstacle 2s linear infinite;
 }
 
 @keyframes player {
@@ -54,5 +59,15 @@ body {
 
     100% {
         bottom: 0;
+    }
+}
+
+@keyframes obstacle {
+    0% {
+        left: 100vw;
+    }
+
+    100% {
+        left: -10vw;
     }
 }
