@@ -31,10 +31,28 @@ body {
     /* border: 1px solid black; */
     background-image: url('/dragon.png');
     background-repeat: no-repeat;
-    background-size: 14.55vw 15vh;
-    height: 15vh;
-    width: 14.55vw;
+    background-size: 10vw 14.68vh;
+    height: 14.68vh;
+    width: 10vw;
     position: absolute;
     bottom: 0;
     right: 10vw;
+}
+
+.animatePlayer {
+    animation: player 0.6s linear;
+}
+
+@keyframes player {
+    0% {
+        bottom: 0;
+    }
+
+    50% {
+        bottom: 35vh;
+    }
+
+    100% {
+        bottom: 0;
+    }
 }
