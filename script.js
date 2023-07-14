@@ -56,7 +56,7 @@ setInterval(() => {
             gameOverAudio.pause()
             // musicAudio.pause()
         }, 1000);
-        gameOver.style.visibility = "visible";
+        gameOver.innerHTML = "Game Over"
         obstacle.classList.remove('obstacleAnimate')
         player.classList.remove('animatePlayer')
         player.style.animation = "0"

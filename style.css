@@ -22,9 +22,9 @@ body {
 .gameOver {
     margin-top: 15vh;
     font-weight: bold;
-    font-size: 10rem;
+    font-size: 7rem;
     font-family: 'Courier New', Courier, monospace;
-    visibility: hidden;
+    /* visibility: hidden; */
     color: brown;
 }
 
