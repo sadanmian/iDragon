@@ -24,5 +24,17 @@ body {
     width: 19.4vw;
     position: absolute;
     bottom: 0;
-    left: 15vw;
+    left: 10vw;
+}
+
+.obstacle {
+    /* border: 1px solid black; */
+    background-image: url('/dragon.png');
+    background-repeat: no-repeat;
+    background-size: 14.55vw 15vh;
+    height: 15vh;
+    width: 14.55vw;
+    position: absolute;
+    bottom: 0;
+    right: 10vw;
 }
