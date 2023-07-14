@@ -14,6 +14,25 @@ body {
     background-image: url('/bg.png');
     background-size: 100vw 100vh;
     background-repeat: no-repeat;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.gameOver {
+    margin-top: 15vh;
+    font-weight: bold;
+    font-size: 10rem;
+    font-family: 'Courier New', Courier, monospace;
+    visibility: hidden;
+    color: brown;
+}
+
+#score {
+    font-size: 2rem;
+    font-family: 'Courier New', Courier, monospace;
+    color: green;
+    font-weight: bold;
 }
 
 .player {
@@ -25,7 +44,8 @@ body {
     width: 19.4vw;
     position: absolute;
     bottom: 0;
-    left: 10vw;
+    left: 2vw;
+    animation: shakePlayer 5s linear infinite;
 }
 
 .obstacle {
@@ -38,6 +58,7 @@ body {
     position: absolute;
     bottom: 0;
     right: 10vw;
+    /* right: 73vw; */
 }
 
 .animatePlayer {
@@ -45,7 +66,27 @@ body {
 }
 
 .obstacleAnimate {
-    animation: obstacle 2s linear infinite;
+    animation: obstacle 3s linear infinite;
+}
+
+@keyframes shakePlayer {
+    0% {
+        bottom: 0.5vh;
+        right: 0.5vw;
+        transform: rotate(-1deg);
+    }
+
+    50% {
+        bottom: -0.5vh;
+        right: -0.5vw;
+        transform: rotate(1deg);
+    }
+
+    100% {
+        bottom: 0vh;
+        right: 0vw;
+        transform: rotate(0deg);
+    }
 }
 
 @keyframes player {
@@ -54,7 +95,7 @@ body {
     }
 
     50% {
-        bottom: 35vh;
+        bottom: 50vh;
     }
 
     100% {
